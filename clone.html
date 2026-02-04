@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.netflix {
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+
+.netflix img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 100px;
+}
+
+/* New: Top-right language and sign-in container */
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Language dropdown */
+select {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Sign In button */
+.sign-in {
+  padding: 8px 16px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.overlay h2 {
+  color: white;
+font-size:50px;
+  margin-bottom: 20px;
+}
+
+.overlay h4 {
+  color: white;
+font-size:20px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e50914;
+  color: white;
+  cursor: pointer;
+}
+ </style>
+</head>
+<body>
+<div class="netflix">
+  <img src="https://assets.nflxext.com/ffe/siteui/vlv3/8200f588-2e93-4c95-8eab-ebba17821657/web/IN-en-20250616-TRIFECTA-perspective_9cbc87b2-d9bb-4fa8-9f8f-a4fe8fc72545_large.jpg">
+  
+  <div class="overlay">
+    <!-- Netflix Logo (top-left) -->
+    <img src="Netflix logo.jpeg" alt="Netflix Logo">
+
+    <!-- Top-right Language + Sign In -->
+    <div class="top-right">
+      <select>
+        <option>English</option>
+        <option>Hindi</option>
+      </select>
+      <button class="sign-in">Sign In</button>
+    </div>
+
+    <!-- Center content -->
+    <h2>Unlimited movies, TV <br>shows and more</h2>
+<h4>Starts at ₹149. Cancel at any time.<br><br>
+
+Ready to watch? Enter your email to create or restart your membership.</h4><h4>
+
+    <div class="input-group">
+      <input type="email" placeholder="Enter your email">
+      <button>Get Started</button>
+    </div>
+  </h4>
+ </div>
+</div>
+
+</body>
+</html>
