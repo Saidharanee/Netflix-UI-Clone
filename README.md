@@ -5,11 +5,16 @@ This project is a frontend clone of the Netflix landing and login page created f
 
 ## Features
 -Responsive Netflix-style UI
+
 -Email input field with basic validation
+
 -Clean layout using CSS Flexbox
+
 -Hover and focus effects for better UX
 
 ## Technologies Used
 -HTML5
+
 -CSS3
+
 -JavaScript (ES6)
